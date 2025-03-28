@@ -11,6 +11,8 @@ protected	    _name (tek alt çizgi)	    Sadece sınıf içi ve alt sınıflar
 private	        __name (çift alt çizgi)	    Sadece tanımlandığı sınıf içinde
 
 """
+from traceback import print_tb
+
 
 class Mensch:
     def __init__(self):
@@ -29,3 +31,5 @@ print(p._beruf)         # ⚠️ protected → Erişilebilir ama önerilmez
 # print(p.__gehalt)     # ❌ private → HATA verir
 
 print(p.zeige_gehalt()) # ✅ doğru şekilde erişim
+
+print("merhaba Github")
